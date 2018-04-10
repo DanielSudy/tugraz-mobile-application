@@ -19,17 +19,19 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        final ListView listView = findViewById(R.id.list);
-
-        ArrayList<String> categories = new ArrayList<String>();
-        List<Map<String, StackOverflowError>> data;
-
-        SimpleAdapter adapter = new SimpleAdapter(this, data);
+    ArrayList<String> sections = new ArrayList<String>();
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//
+//
+//        final ListView listView = findViewById(R.id.list);
+//
+//        ArrayList<String> categories = new ArrayList<String>();
+//        List<Map<String, StackOverflowError>> data;
+//
+//        SimpleAdapter adapter = new SimpleAdapter(this, data);
 
     }
-}
+
