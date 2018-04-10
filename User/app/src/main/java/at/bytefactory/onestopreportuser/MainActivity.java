@@ -7,11 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ExpandableListView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,18 +25,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final ListView listView = findViewById(R.id.list);
-        ArrayList<String> categories = new ArrayList<String>() {{
-            add("Lighting");
-            add("Trash");
-            add("Road");
-        }};
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, categories);
-        listView.setAdapter(adapter);
-        listView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-            }
-        });
+        ArrayList<String> categories = new ArrayList<String>();
+        List<Map<String, StackOverflowError>> data;
+
+        SimpleAdapter adapter = new SimpleAdapter(this, data);
+
     }
 }
